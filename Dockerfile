@@ -1,2 +1,2 @@
-FROM jenkins:latest
+FROM wordpress:latest
 
