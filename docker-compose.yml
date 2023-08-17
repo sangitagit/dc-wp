@@ -16,8 +16,12 @@ services:
       - database
     image: wordpress:latest
     restart: always
+    build:
+   context: .
+   dockerfile: Dockerfile
+    restart: always
     ports:
-      - "8081:8081"
+      - "80:80"
     environment:
       WORDPRESS_DB_HOST: database:3306
       WORDPRESS_DB_USER: wpuser
