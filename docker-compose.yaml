@@ -1,6 +1,6 @@
 version: "3.7"
 services:
- my-jenkins:
+ myjenkins:
   build:
    context: .
    dockerfile:Dockerfile
